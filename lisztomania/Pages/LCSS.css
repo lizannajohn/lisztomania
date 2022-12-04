@@ -1,0 +1,88 @@
+﻿body, html, form {
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: Corbel, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    width: 1900px;
+    height: 1050px;
+    margin: 0px;
+    display: block;
+}
+
+#TopR
+{
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
+}
+
+#wrapT {
+    height: 850px;
+}
+
+#wrapB
+{
+    height:0px;
+    margin-bottom:0px;
+}
+
+#header 
+{
+    height: 50px;
+    background-color: rgba(156, 96, 209, 0.81)
+}
+
+#HLeft
+{
+    float:left;
+    margin-top:10px;
+    color:white;
+}
+
+#footer
+{
+    height:50px;
+    background-color:rgba(156, 96, 209, 0.81);
+    text-align:center;
+}
+
+#BotL
+{
+    float:left;
+}
+
+#BotR {
+    float: right;
+}
+
+#textbanner
+{
+    margin-left:570px;
+    margin-top:20px;
+    width:800px;
+    height:120px;
+    background-color:#a35dcc;
+    text-align:center;
+    text-size-adjust:100%;
+}
+
+#CPRight
+{
+    float:right;
+    margin-right:20px;
+}
+
+#LMenu
+{
+    float: left;
+    height: 800px;
+    width:300px;
+    background-color:rgba(113, 104, 118, 0.58)
+}
+
+#CentCont
+{
+    margin-left:300px;
+}

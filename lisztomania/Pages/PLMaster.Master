@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PLMaster.master.cs" Inherits="lisztomania.Pages.PLMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> lisztomania </title>
+    <link href="LCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #footer
+        {
+            text-align:right;
+        }
+        .auto-style4 {
+            font-size: x-large;
+            color: #FFFFFF;
+        }
+        .auto-style5 {
+            text-decoration: none;
+            font-family: "Glacial Indifference";
+            font-size: x-large;
+            color: #FFFFFF;
+        }
+        .auto-style8 {
+            text-decoration: none;
+        }
+        .auto-style10 {
+            font-size: x-large;
+            font-family: "Glacial Indifference";
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server" style="background-image:url('http://localhost:50276/images/lisztomania1515x715.png'); background-repeat: no-repeat;">
+        <div id="block">
+            <div id="TopD">
+                <div id="TopR">
+                    
+                    <asp:LoginView ID="LoginView1" runat="server">
+                        <AnonymousTemplate>
+                            <span class="auto-style2"><a class="auto-style5" href="Login.aspx"><span class="auto-style4">&nbsp;</span></a></span>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <a href="UserAccount.aspx" style="color: #FFFFFF"> <asp:LoginName ID="LoginName1" runat="server" FormatString="{0}" CssClass="auto-style1" style="font-size: x-large; font-family: 'Glacial Indifference'"/> </a>
+                            &nbsp;
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Logout" LogoutPageUrl="~/Pages/Home.aspx" LogoutAction="Redirect" CssClass="auto-style5"/>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapT">
+
+            <div id="header">
+                <div id="HLeft">
+                   <asp:LoginView ID="LoginView2" runat="server">
+                    <AnonymousTemplate>
+                        <a href="Home.aspx" class="auto-style8"><span class="auto-style4">&nbsp;</span></a>
+                    </AnonymousTemplate>
+                       <LoggedInTemplate>
+                           <span class="auto-style10" style="color: #FFFFFF"> &nbsp; l i s z t o m a n i a</span>
+                       </LoggedInTemplate>
+                </asp:LoginView>
+                </div>
+                
+            </div>
+
+            <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        </div>
+        
+       
+
+        <div id="wrapB">
+            
+            <div id="footer">
+                <div id="BotL">
+                    <h2> © lisztomania </h2>
+                </div>
+
+                <div id="BotR">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../images/1_Instagram_colored_svg_1-512.png" height="40px"/>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../images/social-facebook-button-blue-icon.png" height="40px"/>
+                    </a>
+
+                    <a href="https://www.twitter.com/" target="_blank" >
+                        <img src="../images/Twitter-icon.png" height="40px"/>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

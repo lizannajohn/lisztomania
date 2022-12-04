@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="lisztomania.Pages.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> lisztomania </title>
+    <link href="LCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #footer
+        {
+            text-align:right;
+        }
+        .auto-style3 {
+            font-size: x-large;
+        }
+        .auto-style4 {
+            font-size: x-large;
+            color: #FFFFFF;
+        }
+        .auto-style5 {
+            text-decoration: none;
+            font-family: "Glacial Indifference";
+            font-size: x-large;
+            color: #FFFFFF;
+        }
+        .auto-style6 {
+            font-family: "Glacial Indifference";
+        }
+        .auto-style8 {
+            text-decoration: none;
+        }
+        .auto-style9 {
+            color: #FFFFFF;
+            font-family: "Glacial Indifference";
+            font-size: x-large;
+        }
+        .auto-style10 {
+            font-size: x-large;
+            font-family: "Glacial Indifference";
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server" style="background-image:url('http://localhost:50276/images/lisztomania1515x715.png'); background-repeat: no-repeat;">
+        <div id="block">
+            <div id="TopD">
+                <div id="TopR">
+                    
+                    <asp:LoginView ID="LoginView1" runat="server">
+                        <AnonymousTemplate>
+                            <span class="auto-style2"><a class="auto-style5" href="SignUp.aspx"><span class="auto-style4">s i g n u p </span></a><span class="auto-style3">&nbsp; &nbsp; </span><a class="auto-style5" href="Login.aspx"><span class="auto-style4">l o g i n </span></a></span>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <asp:LoginName ID="LoginName1" runat="server" FormatString="{0}" CssClass="auto-style1" style="font-size: x-large; font-family: 'Glacial Indifference'"/>
+                            &nbsp;
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Logout" LogoutPageUrl="~/Pages/Home.aspx" LogoutAction="Redirect" CssClass="auto-style5"/>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapT">
+
+            <div id="header">
+
+                <div id="HLeft">
+                   <asp:LoginView ID="LoginView2" runat="server">
+                    <AnonymousTemplate>
+                        &nbsp;&nbsp;<span class="auto-style6"><a class="auto-style8" href="AboutUs.aspx"><span class="auto-style4">a b o u t u s </span></a><span class="auto-style3">&nbsp; &nbsp; </span><a class="auto-style8" href="Help.aspx"><span class="auto-style4">h e l p</span></a></span> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="ContactUs.aspx" class="auto-style8"><span class="auto-style9">c o n t a c t u s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> &nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Home.aspx" class="auto-style8"> <span class="auto-style4">l i s z t o m a n i a </span> </a>
+                    </AnonymousTemplate>
+                       <LoggedInTemplate>
+                           <span class="auto-style10" style="color: #FFFFFF"> &nbsp; l i s z t o m a n i a</span>
+                       </LoggedInTemplate>
+                </asp:LoginView>
+                </div>
+                
+            </div>
+
+            <div>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+        </div>
+        
+       
+
+        <div id="wrapB">
+            
+            <div id="footer">
+                <div id="BotL">
+                    <h2> © lisztomania </h2>
+                </div>
+
+                <div id="BotR">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../images/1_Instagram_colored_svg_1-512.png" height="40px"/>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../images/social-facebook-button-blue-icon.png" height="40px"/>
+                    </a>
+
+                    <a href="https://www.twitter.com/" target="_blank" >
+                        <img src="../images/Twitter-icon.png" height="40px"/>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
